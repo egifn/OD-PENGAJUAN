@@ -19,6 +19,16 @@ Route::get('/', 'HomeController@home')->name('welcome');
 
 Auth::routes();
 Route::middleware(['auth'])->group(function () {
+    // Detail kategori jasa
+    Route::get('bod/bank-vendor/jasa/detail/{kategori}', function ($kategori) {
+        return view('bod.master_bod.bank_vendor.jasa_detail', compact('kategori'));
+    })->name('bod.bank-vendor.jasa.detail');
+
+    // Detail kategori barang
+    Route::get('bod/bank-vendor/barang/detail/{kategori}', function ($kategori) {
+        return view('bod.master_bod.bank_vendor.barang_detail', compact('kategori'));
+    })->name('bod.bank-vendor.barang.detail');
+
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('user_registration', 'UserRegistrationController')->except(['show']);
     Route::get('user_registration/action_employee', 'UserRegistrationController@actionEmployee')->name('user_registration/action_employee.actionEmployee');
@@ -647,6 +657,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::resource('bod_bank_vendor', 'MasterBod\BankVendorController')->except(['create', 'show']);
     Route::get('bod_bank_vendor/getDataBankVendor', 'MasterBod\BankVendorController@getDataBankVendor')->name('bod_bank_vendor/getDataBankVendor.getDataBankVendor');
+    Route::get('bod_bank_vendor/jasa', 'MasterBod\BankVendorController@jasa')->name('bod_bank_vendor.jasa');
+    Route::get('bod_bank_vendor/barang', 'MasterBod\BankVendorController@barang')->name('bod_bank_vendor.barang');
 
     Route::resource('bod_spp_cheque', 'MasterBod\BodSppChequeController')->except(['create', 'show']);
     Route::get('bod_spp_cheque/getDataSppCheque', 'MasterBod\BodSppChequeController@getDataSppCheque')->name('bod_spp_cheque/getDataSppCheque.getDataSppCheque');

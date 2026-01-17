@@ -15514,4 +15514,21 @@ body {
     breakpoint-xl: 1200px;
 }
 
+/* Pastikan dropdown yang open terlihat */
+.sidebar-nav .nav-dropdown.open>.nav-dropdown-items {
+    display: block;
+}
+
+/* Style untuk item aktif */
+.sidebar-nav .nav-item.active>.nav-link {
+    background-color: #ffffff36;
+    color: #fff;
+}
+
+/* Style untuk dropdown toggle yang aktif */
+.sidebar-nav .nav-dropdown.open>.nav-link {
+    background-color: #ffffff12;
+}
+
+
 /*# sourceMappingURL=style.css.map */
