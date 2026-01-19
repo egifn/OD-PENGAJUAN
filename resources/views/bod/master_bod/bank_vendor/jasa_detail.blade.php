@@ -109,9 +109,9 @@
                                             <th>Jenis Pembayaran</th>
                                             <th>Alamat Vendor</th>
                                             <th>No. Telepon</th>
-                                            <th>Pemilik Vendor</th>
-                                            <th>Approved By</th>
-                                            <th>Date Approved</th>
+                                            <th>Yang Mengajukan Vendor</th>
+                                            <th>Tgl Approved Vendor</th>
+                                            <th>Di Approved Oleh</th>
                                         </tr>
                                     </thead>
                                     <tbody id="bank-data">
