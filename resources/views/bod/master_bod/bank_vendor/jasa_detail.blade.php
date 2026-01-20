@@ -535,6 +535,8 @@
                 <td title="${escapeHtml(bn.pemilik_vendor || '')}" style="white-space:nowrap !important;">${escapeHtml(bn.pemilik_vendor || '-')}</td>
                 <td>-</td>
                 <td>-</td>
+                <td>-</td>
+                <td>-</td>
             </tr>`;
         }
 
