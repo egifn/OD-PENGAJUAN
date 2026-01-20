@@ -109,6 +109,8 @@
                                             <th>Jenis Pembayaran</th>
                                             <th>Alamat Vendor</th>
                                             <th>No. Telepon</th>
+                                            <th>Pemilih Vendor</th>
+                                            <th>Tgl Pengajuan Vendor</th>
                                             <th>Yang Mengajukan Vendor</th>
                                             <th>Tgl Approved Vendor</th>
                                             <th>Di Approved Oleh</th>
